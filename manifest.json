@@ -1,0 +1,8 @@
+{
+    "domain": "xboxone",
+    "name": "Xbox One - Media Player Integration",
+    "documentation": "",
+    "dependencies": [],
+    "codeowners": ["@lelandcope"],
+    "requirements": ["packaging>=20.3"]
+}

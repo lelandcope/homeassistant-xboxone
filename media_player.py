@@ -665,7 +665,7 @@ class XboxOne:
         if self._pins:
             try:
                 for item in self._pins['ListItems']:
-                    if (item['Item']['ContentType'] == 'DApp' or item['Item']['ContentType'] == 'DGame') and item['Item']['Title'] not in apps.keys():
+                    if item['Item']['ContentType'] == 'DApp' and item['Item']['Title'] not in apps.keys():
                         apps[item['Item']['Title']] = 'appx:{0}!App'.format(
                             item['Item']['ItemId'])
             except:

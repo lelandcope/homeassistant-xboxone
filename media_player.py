@@ -221,7 +221,7 @@ class XboxOneDevice(MediaPlayerDevice):
     def source_list(self):
         """Return a list of running apps."""
 
-        _LOGGER.info('______________ source_list')
+        # _LOGGER.info('______________ source_list')
         return list(self._xboxone.all_apps.keys())
 
     # Functions
@@ -552,8 +552,8 @@ class XboxOne:
         if not self._pins and isAuthenticated:
             self._pins = await self.async_get('/web/pins')
 
-        _LOGGER.info('_______________________ pins')
-        _LOGGER.info(self._pins)
+        # _LOGGER.info('_______________________ pins')
+        # _LOGGER.info(self._pins)
 
         # Device Info
         device_info = await self.async__get_device_info()
